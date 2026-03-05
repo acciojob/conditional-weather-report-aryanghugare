@@ -4,9 +4,9 @@ function WeatherDisplay({ data }) {
   return (
     <div>
       <h2>Weather Report</h2>
-      <p style={{ color: data.temperature > 20 ? 'red' : 'blue' }}>
-        Temperature : {data.temperature}°C
-      </p>
+      <span style={{ color: data.temperature > 20 ? 'red' : 'blue' }}>
+      <p> Temperature : {data.temperature} </p> 
+      </span>
       <p>Conditions: {data.conditions}</p>
     </div>
   )
